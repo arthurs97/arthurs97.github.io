@@ -1,0 +1,80 @@
+html {
+	height: 100%;
+}
+
+body {
+  	font-family: 'Rokkitt', serif;
+  	height: 100%;
+}
+
+.heading {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.dropdown-menu, .dropdown-toggle {
+	font-family: 'Roboto', sans-serif;
+}
+
+#banner {
+	width: 100%;
+	position: relative;
+	min-height: 100%;
+	background: url("sky.JPG");
+	background-size: cover;
+	background-position: center;
+}
+
+hr {
+	width: 65%;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+h3 {
+	font-size: 2.8em;
+}
+
+p {
+	font-size: 1.4em;
+}
+
+section {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #f2f6ff;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+#landingContent {
+	text-align: center;
+	color: white;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+	padding-top: 20%;
+}
+
+#landingContent h1 {
+	font-weight: 700;
+	font-size: 4.0em;
+}
+
+#about {
+	background-color: #222222;
+}
+
+#portrait {
+	margin: auto;
+	height: 65%;
+	width: 65%;
+}
+
+/*#blog {
+	background-color: #282828;
+}*/
