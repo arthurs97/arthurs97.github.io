@@ -35,7 +35,7 @@ hr {
 }
 
 h3 {
-	font-size: 2.8em;
+	font-size: 2.0em;
 }
 
 p {
@@ -46,6 +46,11 @@ section {
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
+
+.section-heading {
+	font-size: 2.4em;
+}
+
 .navbar-inverse .navbar-nav>li>a {
 	color: #f2f6ff;
 }
