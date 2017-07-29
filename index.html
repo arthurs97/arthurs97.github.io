@@ -16,46 +16,46 @@
 </head>
 
 
-<body id="page-top">
+<body>
 
 <!--Navbar-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand heading" href="#">Arthur Shi</a>
-    </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand heading" href="#">Arthur Shi</a>
+        </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-      	<li><a href="#about"><i class="fa fa-user-circle-o" aria-hidden="true"></i>    About</a></li>
-        <li><a href="#blog"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>    Blog</a></li>
-        <li><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>   Photos</a></li>
-        <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i>   Music</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>    Recruiting</a></li>
-        <li><a href="#"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>    Contact</a></li>
-      </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#about"><i class="fa fa-user-circle-o" aria-hidden="true"></i>    About</a></li>
+                <li><a href="#blog"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>    Blog</a></li>
+                <li><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>   Photos</a></li>
+                <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i>   Music</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>    Recruiting</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>    Contact</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 <!--End navbar -->
 
 <!-- Header -->
 <header id="banner">
-    <div class="header-content">
+    <div class="container">
         <div class="row">
           <div id="landingContent">
             <h1 class="heading">Arthur Shi</h1>
             <h3>Lover of <span id="loverOf">life</span>.</h3>
             <hr>
-            <p>Welcome to my personal site! Have a look around, get to know me a bit, and don't hesitate to get in touch.</p>
+            <p>Hey, welcome! Have a look around, get to know me a bit, and don't hesitate to get in touch.</p>
           </div>
         </div>
     </div>
@@ -64,34 +64,69 @@
 
 <!-- About -->
 <section class="bg-primary" id="about">
-    <div class="row container">
+<div class="container">
+    <div class="row">
         <div class="col-xs-4 container">
             <img src="img/portrait.JPG" alt="Me!" id="portrait" align="right">
         </div>
         <div class="col-xs-8" id="about-text">
             <h2 class="section-heading">About Me</h2>
             <hr align="left">
-            <p>I'm trying to figure out what the best way for me to make the world a better place is. It's a confusing question - I look to philosophy, literature, music, tech, and entrepreneurship for inspiration. For now, I'm interested in software, and I study computer science at the University of Michigan.</p>
+            <p>I'm trying to figure the best way for me to make the world a better place. I find inspiration in music, philosophy, tech, literature, and entrepreneurship. For now, I'm interested in software, and I study computer science at the University of Michigan.</p>
         </div>
     </div>
+</div>
 </section>
 
 <!-- Blog-->
 <section class="section blog" id="blog">
-  <div class="container">
-    <header class="section-heading">
-      <h2>Blog</h2>
-      <p>Here's some of my most recent writing.</p>
-    </header>
+    <div class="container">
+        <header class="section-heading">
+            <h2>Blog</h2>
+            <p>Here's some of my most recent writing.</p>
+        </header>
 
     <div class="section-content" id="blogContent">
-      <div class="row" id="jsonContent"></div>
+        <div class="row" id="jsonContent"></div>
     </div>
     <!-- /#blogContent-->
     <div class="text-center"><a class="btn btn-dark" id="loadBlogPosts" href="//medium.com/feed/arthurs-blog">Check out my full blog on Medium  <span class="fa fa-angle-double-right"></span></a></div>
-  </div>
+    </div>
 </section>
 <!-- End blog-->
+
+<contactFooter id="contact">
+    <div class="container contact">
+        <div class="text-center">
+            <h2 class="section-heading">Contact</h2>
+            <hr class="primary">
+        </div>
+        <div class="row text-center">
+            <div class="col-xs-6">
+                <i class="fa fa-phone fa-3x sr-contact"></i>
+                <p>248-974-6516</p>
+            </div>
+            <div class="col-xs-6">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p><a href="mailto:arshi@umich.edu">arshi@umich.edu</a></p>
+            </div>
+        </div>
+    </div>
+</contactFooter>
+<footer id="footer">
+    <div class="footer-social-icons container">
+    <div class="col-xs-12">
+        <ul class="social-icons">
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/arthur-shi/"> </a>
+            <a class="fa fa-github" href="https://github.com/arthurs97"> </a>
+            <a class="fa fa-medium" href="https://medium.com/@arthurshi"> </a>
+            <a class="fa fa-facebook" href="https://www.facebook.com/arthurkshi"> </a>
+            <a class="fa fa-spotify" href="https://open.spotify.com/user/12101008677"> </a>
+        </ul>
+    </div>
+    </div>
+</footer>
+
 
 <!-- Scripts -->
 <!--jQuery-->

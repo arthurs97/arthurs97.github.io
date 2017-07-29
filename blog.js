@@ -25,8 +25,8 @@ $(document).ready(function() {
 
                 //TODO: enforce image sizing
                 output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
-                output += '<div class="blog-content"><h4><a href="' + item.link + '">' + item.title + "</a></h4>";
-                output += '<div class="post-meta"><span>By ' + item.author + "</span></div>";
+                output += '<div class="blog-content"><h4><em><a href="' + item.link + '">' + item.title + "</a></em></h4>";
+                output += '<div class="post-meta"><em><span>By ' + item.author + "</span></em></div>";
 
                 var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
                 var maxLength = 120; // maximum number of characters to extract
