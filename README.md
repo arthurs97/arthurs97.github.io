@@ -5,5 +5,5 @@ Welcome to my personal site. This is just a fun way for me to share a bit about 
 -HTML5, CSS3/Bootstrap, Javascript/jQuery<br /> 
 -fetching blog posts from Medium RSS and using rss2json API to display dynamically<br />
 -Instagram API to display some pictures<br />
--Spotify API to run a radio station<br /> 
+-Spotify player widget for playlists<br /> 
 -Soundcloud API to show my recently reposted tracks<br />

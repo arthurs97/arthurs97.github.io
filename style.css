@@ -90,10 +90,11 @@ section {
 	width: 100%;
 }
 
-.footer {
+footer {
 	background-color: #322f30;
 	padding-bottom: 30px;
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .footer-social-icons {
@@ -109,7 +110,7 @@ section {
     padding: 0;
 }
 
-.footer .fa {
+footer .fa {
 	padding:10px 15px;
     -o-transition:.5s;
     -ms-transition:.5s;

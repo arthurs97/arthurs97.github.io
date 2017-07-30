@@ -28,10 +28,9 @@ $(document).ready(function() {
                 output += '<div class="blog-content"><h4><em><a href="' + item.link + '">' + item.title + "</a></em></h4>";
                 output += '<div class="post-meta"><em><span>By ' + item.author + "</span></em></div>";
 
-                var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
-                var maxLength = 120; // maximum number of characters to extract
+                var yourString = item.description.replace(/<img[^>]*>/g, "");
+                var maxLength = 120; //show 120 char preview
 
-                //trim the string to the maximum length
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
