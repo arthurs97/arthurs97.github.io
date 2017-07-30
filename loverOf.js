@@ -1,3 +1,5 @@
+console.log("lover of script loaded");
+
 const passions = [
 	"lifelong learning",
 	"computer science",

@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <!-- Main css-->
 	<link rel="stylesheet" type="text/css" href="style.css">
-     <!-- Blog css-->
-    <link rel="stylesheet" type="text/css" href="blog.css">
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rokkitt:100|Roboto:400,900" rel="stylesheet">
      <!--Font Awesome -->
@@ -35,7 +33,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="#about"><i class="fa fa-user-circle-o" aria-hidden="true"></i>    About</a></li>
                 <li><a href="#blog"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>    Blog</a></li>
-                <li><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>   Photos</a></li>
+                <li><a href="#photos"><i class="fa fa-camera-retro" aria-hidden="true"></i>   Photos</a></li>
                 <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i>   Music</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -80,6 +78,7 @@
 
 <!-- Blog-->
 <section class="section blog" id="blog">
+    <link rel="stylesheet" type="text/css" href="blog.css">
     <div class="container">
         <header>
             <h2 class="section-heading">Blog</h2>
@@ -105,7 +104,7 @@
     </div>
     <div class="container">
         <h3>Recents from my Instagram feed <a href="https://www.instagram.com/arthur_k_shi/"><img src="instaLogo.png" alt="follow me on insta" style="width:30px;height:30px;border:0;"> </a></h3>
-        <ul id="instafeed"></ul>
+        <ul id="instafeed" align="center"></ul>
     </div>
 </section>
 
@@ -114,14 +113,16 @@
 <contactFooter id="contact">
     <div class="container contact">
         <div class="text-center">
-            <h2 class="section-heading">Connect with me!</h2>
+            <h2 class="section-heading">Thanks for stopping by!</h2>
             <hr class="primary">
         </div>
         <div class="row text-center">
+            <p>Connect with me</p>
             <div class="col-xs-6">
                 <i class="fa fa-phone fa-3x sr-contact"></i>
                 <p>248-974-6516</p>
             </div>
+            
             <div class="col-xs-6">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                 <p><a style="color:white;" href="mailto:arshi@umich.edu">arshi@umich.edu</a></p>
@@ -129,17 +130,13 @@
         </div>
     </div>
 </contactFooter>
-<footer id="footer">
-    <div class="footer-social-icons container">
-    <div class="col-xs-12">
-        <ul class="social-icons">
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/arthur-shi/"> </a>
-            <a class="fa fa-github" href="https://github.com/arthurs97"> </a>
-            <a class="fa fa-medium" href="https://medium.com/@arthurshi"> </a>
-            <a class="fa fa-facebook" href="https://www.facebook.com/arthurkshi"> </a>
-            <a class="fa fa-spotify" href="https://open.spotify.com/user/12101008677"> </a>
-        </ul>
-    </div>
+<footer class="footer">
+    <div class="footer-social-icons social-icons container">
+        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/arthur-shi/"> </a>
+        <a class="fa fa-github" href="https://github.com/arthurs97"> </a>
+        <a class="fa fa-medium" href="https://medium.com/@arthurshi"> </a>
+        <a class="fa fa-facebook" href="https://www.facebook.com/arthurkshi"> </a>
+        <a class="fa fa-spotify" href="https://open.spotify.com/user/12101008677"> </a>
     </div>
 </footer>
 <!--End footer-->
