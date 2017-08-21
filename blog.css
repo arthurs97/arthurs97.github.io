@@ -7,7 +7,7 @@
   height: 270px;
   width: 360px;
 }
-/*date isn't currently even being used*/
+
 .blog .blog-post header .date {
   background-color: #fdfdfd;
   position: absolute;
