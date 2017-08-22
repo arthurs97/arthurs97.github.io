@@ -1,4 +1,8 @@
 /*
+Until I figure out how to get medium API to respond with more than 10 posts, I can't get an accurate word count :(
+PyMedium Flask API is an option but seems unnecessarily heavyweight for one span lol
+https://github.com/enginebai/PyMedium
+
 wordcount: https://stackoverflow.com/questions/9864644/jquery-character-and-word-count/9864680
 
 $( function(){
@@ -8,8 +12,6 @@ $( function(){
       ;
     $( '#somwhereInYourDocument' ).text( "The text had " + charCount + " characters and " + wordCount +" words" );
 });
-
-
 */
 
 const PREVIEW_LENGTH = 120;
@@ -17,20 +19,12 @@ const PREVIEW_LENGTH = 120;
 $(document).ready(function() {
     const $content = $("#jsonContent");
     const data = { rss_url: "https://medium.com/feed/arthurs-blog" };
-    var wordcount = 0;
     $.get("https://api.rss2json.com/v1/api.json", data, function(response) {
         if (response.status == "ok") {
             var output = "";
             $.each(response.items, function(k, item) {
-                let visibleSm;
-
-                if (k < 3) {
-                    visibleSm = "";
-                    //move display logic to here
-                } else {
-                    visibleSm = " visible-sm";
-                    //don't display, but still add word count
-                }
+                let visibleSm = "";
+                if (k >= 3) { visibleSm = " visible-sm"; }
 
                 output += '<div class="col-sm-6 col-md-4 cell' + visibleSm + '">';
                 output += '<div class="blog-post"><header>';
@@ -49,23 +43,17 @@ $(document).ready(function() {
 
                 //remove imgs from text string
                 const blogBody = item.description.replace(/<img[^>]*>/g, "");
-                //update wordcount
-                const currBlogWC = blogBody.replace( /[^\w ]/g, "" ).split( /\s+/ ).length
-                wordcount += currBlogWC
 
-                const trimmedString = blogBody.substr(0, PREVIEW_LENGTH);
+                let trimmedString = blogBody.substr(0, PREVIEW_LENGTH);
                 //re-trim if cut off in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                 output += "<p>" + trimmedString + "...</p>";
                 output += "</div></div></div>";
                 
-                //after modifying to get word count, this is prob not going to be here
                 return k < 3;
             });
 
             $content.html(output);
-            //TODO: Actually add the #wordCount element in the HTML
-            $("#wordCount").html(wordcount);
         } else { //response.status != "ok"
             $content.html("Sorry! There was an rss2json API error and my blogs couldn't be loaded.")
         }
