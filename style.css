@@ -83,11 +83,12 @@ section {
 	width: 65%;
 }
 
-.contact {
+#contact {
 	background-color: #322f30;
 	color: #fff;
 	margin: auto;
 	width: 100%;
+	padding-top: 30px;
 }
 
 footer {
