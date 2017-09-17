@@ -3,11 +3,11 @@ html {
 }
 
 body {
-  	font-family: 'Rokkitt', serif;
-  	height: 100%;
-  	margin: 0;
-  	padding: 0;
-  	width: 100%;
+	font-family: 'Rokkitt', serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .heading {
@@ -23,7 +23,8 @@ body {
 	width: 100%;
 	position: relative;
 	min-height: 100%;
-	background: url("https://imgur.com/1i5kueY.jpg");
+	/*https://imgur.com/1i5kueY.jpg*/
+	background: url("/img/sky.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -34,8 +35,23 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+hr.section { 
+	width: 80%;
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
 h3 {
 	font-size: 2.0em;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
 
 p {
@@ -43,7 +59,7 @@ p {
 }
 
 section {
-	padding-top: 50px;
+	padding-top: 35px;
 	padding-bottom: 20px;
 }
 
@@ -99,36 +115,36 @@ footer {
 }
 
 .footer-social-icons {
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-    vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	padding: 0;
+	vertical-align: middle;
 }
 
 .social-icons a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0;
+	color: #fff;
+	text-decoration: none;
+	padding: 0;
 }
 
 footer .fa {
 	padding:10px 15px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition: .5s;
+	background-color: #322f30;
 }
 
 .fa-linkedin:hover {
-    background-color: #0073a4;
+	background-color: #0073a4;
 }
 .fa-medium:hover {
-    background-color: #3CB371;
+	background-color: #3CB371;
 }
 .fa-facebook:hover {
-    background-color: #3d5b99;
+	background-color: #3d5b99;
 }
 .fa-github:hover {
 	background-color: #525252;
