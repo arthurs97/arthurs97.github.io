@@ -37,7 +37,7 @@ $(document).ready(function() {
                 const src = item.description.substring(srcStart, srcEnd); // Extract just the URL
 
                 //TODO: enforce image sizing
-                output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
+                output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" style="width:360px; height:240px !important;"></div></header>';
                 output += '<div class="blog-content"><h4><em><a href="' + item.link + '">' + item.title + "</a></em></h4>";
                 output += '<div class="post-meta"><em><span>By ' + item.author + "</span></em></div>";
 
